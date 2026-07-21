@@ -75,13 +75,13 @@ A seguir temos a nossa tabela de colaboradores, com os tipos de dados utilizados
 |----------|------|-----------|
 | id | BIGINT | Identificador único do colaborador |
 | matricula | VARCHAR(10) | Matrícula interna |
-| nome_completo | VARCHAR(255) | Nome completo |
-| data_nascimento | DATE | Data de nascimento |
+| nomeCompleto | VARCHAR(255) | Nome completo |
+| dataNascimento | DATE | Data de nascimento |
 | cpf | VARCHAR(11) | CPF do colaborador |
 | email | VARCHAR(100) | Email corporativo ou pessoal |
-| data_admissao | DATE | Data de contratação |
-| data_demissao | DATE | Data de desligamento (opcional) |
-| tipo_contrato | VARCHAR(25) | CLT, PJ, Estágio, Jovem Aprendiz, etc. |
+| dataAdmissao | DATE | Data de contratação |
+| dataDemissao | DATE | Data de desligamento (opcional) |
+| tipoContrato | VARCHAR(25) | CLT, PJ, Estágio, Jovem Aprendiz, etc. |
 
 ---
 
