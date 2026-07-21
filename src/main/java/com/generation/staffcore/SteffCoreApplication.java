@@ -1,4 +1,4 @@
-package com.generation.steffcore;
+package com.generation.staffcore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

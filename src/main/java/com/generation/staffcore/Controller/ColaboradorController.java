@@ -1,12 +1,13 @@
-package com.generation.steffcore.Controller;
+package com.generation.staffcore.Controller;
 
-import com.generation.steffcore.Model.Colaborador;
-import com.generation.steffcore.Repository.ColaboradorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.generation.staffcore.Model.Colaborador;
+import com.generation.staffcore.Repository.ColaboradorRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,7 +27,7 @@ public class ColaboradorController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Colaborador> getById(@PathVariable long id ){
+    public ResponseEntity<Colaborador> getById(@PathVariable Long id ){
         return colaboradorRepository.findById (id)
                 //validação
                 .map (resposta -> ResponseEntity.ok (resposta))
