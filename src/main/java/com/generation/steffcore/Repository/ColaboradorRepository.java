@@ -10,5 +10,6 @@ import java.util.List;
 public interface ColaboradorRepository extends JpaRepository<Colaborador, Long> {
 
     public List<Colaborador> findAllByIdContaining(String nome);
+    public List<Colaborador> findAllByNomeCompletoContaining(String nome);
 
 }

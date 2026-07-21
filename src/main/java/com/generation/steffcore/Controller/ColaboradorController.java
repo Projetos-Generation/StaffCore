@@ -33,10 +33,10 @@ public class ColaboradorController {
                 .orElse (ResponseEntity.notFound ().build ());
     }
 
-    //consulta personalizada
+  //consulta personalizada
     @GetMapping("/nome/{nome}")
-    public ResponseEntity<List<Colaborador>>getAllByTitulo(@PathVariable String nome){
-        return ResponseEntity.ok (colaboradorRepository.findAllByIdContaining (nome));
+    public ResponseEntity<List<Colaborador>> getAllByNomeCompleto(@PathVariable String nome){
+        return ResponseEntity.ok(colaboradorRepository.findAllByNomeCompletoContaining(nome));
     }
 
     //Criação de dados
